@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מפת ישראל - אזורים ומידע</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="map.css">
+</head>
+<body>
+  <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <ul class="nav-menu">
+                <li>
+                  <a href="about.html" class="nav-link">
+                      <i class="fas fa-info-circle"></i> 
+                      אודות
+                  </a>
+                    
+                </li>
+                <li>
+                    <a href="quiz.html" class="nav-link">
+                        <i class="fas fa-question-circle"></i> 
+                        חידון
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline.html" class="nav-link">
+                        <i class="fas fa-clock"></i> 
+                        ציר זמן
+                    </a>
+                </li>
+                    <a href="map.html" class="nav-link active">
+                          <i class="fas fa-globe"></i> 
+                        ארץ ישראל
+                    </a>
+                <li>
+                    
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+    <div class="rain"></div>
+    <div class="container">
+    </div>
+  </header>
+
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-map-marked-alt"></i>
+        <span>מפה אינטראקטיבית</span>
+      </div>
+      <h1 class="hero-title">גלו את אזורי ישראל</h1>
+      <p class="hero-subtitle">המדריך האולטימטיבי לגיאוגרפיה, תרבות והיסטוריה של ישראל</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="content-grid">
+      <!-- Map Section -->
+      <section class="map-section">
+        <div class="map-header">
+          <h2 class="map-title">מפת ישראל האינטראקטיבית</h2>
+          <p class="map-description">לחצו על האזורים השונים כדי לגלות מידע מפורט</p>
+        </div>
+
+        <div class="map-container">
+          <img src="https://i.pinimg.com/736x/94/a5/57/94a55745280da732b40bd22723357a1b.jpg" alt="מפת ישראל" class="map-image">
+
+          <button id="btn-north" class="region-button" data-region="north">
+            <i class="fas fa-mountain"></i>
+            <span>צפון</span>
+          </button>
+          <button id="btn-haifa" class="region-button" data-region="haifa">
+            <i class="fas fa-anchor"></i>
+            <span>חיפה</span>
+          </button>
+          <button id="btn-shomron" class="region-button" data-region="shomron">
+            <i class="fas fa-hiking"></i>
+            <span>שומרון</span>
+          </button>
+          <button id="btn-jerusalem" class="region-button" data-region="jerusalem">
+            <i class="fas fa-landmark"></i>
+            <span>ירושלים</span>
+          </button>
+          <button id="btn-telaviv" class="region-button" data-region="telaviv">
+            <i class="fas fa-city"></i>
+            <span>ת"א</span>
+          </button>
+          <button id="btn-center" class="region-button" data-region="center">
+            <i class="fas fa-building"></i>
+            <span>מרכז</span>
+          </button>
+          <button id="btn-south" class="region-button" data-region="south">
+            <i class="fas fa-sun"></i>
+            <span>דרום</span>
+          </button>
+          <button id="btn-azza" class="region-button" data-region="azza">
+            <i class="fas fa-umbrella-beach"></i>
+            <span>עזה</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Info Panel -->
+      <aside class="info-panel">
+        <div class="info-panel-header">
+          <h2 class="info-panel-title">מידע על האזור</h2>
+          <p class="info-panel-subtitle">עובדות מעניינות ונתונים עדכניים</p>
+        </div>
+
+        <div class="info-content">
+          <div class="info-placeholder">
+            <i class="fas fa-hand-pointer pulse"></i>
+            <h3>בחרו אזור במפה</h3>
+            <p>לחצו על כל אחד מהכפתורים במפה כדי לגלות מידע מפורט על האזור, עובדות מעניינות ונתונים עדכניים.</p>
+          </div>
+
+          <!-- Info Boxes -->
+          <div id="info-north" class="info-box">
+            <div class="region-header">
+              <div class="region-icon">
+                <i class="fas fa-mountain"></i>
+              </div>
+              <h3 class="region-title">צפון ישראל</h3>
+            </div>
+            <ul class="region-facts">
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-mountain"></i>
+                </div>
+                <div class="fact-content">
+                  נכון ל-2025, הנקודה הגבוהה ביותר בארץ ישראל היא פסגת החרמון בגובה 2,814 מטרים מעל פני הים.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-water"></i>
+                </div>
+                <div class="fact-content">
+                  הכנרת היא אגם המים המתוקים הגדול בארץ ישראל, אם כי מפלס המים ירד בשנים האחרונות עקב בצורת.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-city"></i>
+                </div>
+                <div class="fact-content">
+                  נצרת היא העיר הערבית השנייה בגודלה בישראל.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <div class="fact-content">
+                  רמת הגולן היא אזור בצפון-מזרח מדינת ישראל עם נופים מרהיבים וצמחייה מגוונת.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="info-haifa" class="info-box">
+            <div class="region-header">
+              <div class="region-icon">
+                <i class="fas fa-anchor"></i>
+              </div>
+              <h3 class="region-title">חיפה והסביבה</h3>
+            </div>
+            <ul class="region-facts">
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-ship"></i>
+                </div>
+                <div class="fact-content">
+                  חיפה היא עיר נמל חשובה עם נוף לים והכרמל.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="fact-content">
+                  העיר ידועה כעיר מעורבת עם אוכלוסייה יהודית וערבית.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="fact-content">
+                  בחיפה נמצאים אתרים חשובים כמו הבהאים ומרכזים אקדמיים.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="info-shomron" class="info-box">
+            <div class="region-header">
+              <div class="region-icon">
+                <i class="fas fa-hiking"></i>
+              </div>
+              <h3 class="region-title">שומרון</h3>
+            </div>
+            <ul class="region-facts">
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-mountain"></i>
+                </div>
+                <div class="fact-content">
+                  הרי יהודה ושומרון – אזור הררי מרכזי ביהודה.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-history"></i>
+                </div>
+                <div class="fact-content">
+                  האזור עשיר בהיסטוריה ובאתרים ארכיאולוגיים.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-cloud-sun"></i>
+                </div>
+                <div class="fact-content">
+                  מאופיין בנופים הרריים ובמזג אוויר נוח יחסית.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="info-jerusalem" class="info-box">
+            <div class="region-header">
+              <div class="region-icon">
+                <i class="fas fa-landmark"></i>
+              </div>
+              <h3 class="region-title">ירושלים</h3>
+            </div>
+            <ul class="region-facts">
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-crown"></i>
+                </div>
+                <div class="fact-content">
+                  ירושלים היא בירת ישראל והעיר הגדולה ביותר בה.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-university"></i>
+                </div>
+                <div class="fact-content">
+                  בירושלים שוכנים מוסדות הממשל: הכנסת, בית המשפט העליון, משכן הנשיא ובית ראש הממשלה.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="fact-content">
+                  נכון לסוף מאי 2024 מתגוררים בה כמיליון תושבים.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-pray"></i>
+                </div>
+                <div class="fact-content">
+                  העיר מקודשת לשלוש הדתות המונותאיסטיות הגדולות.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="info-telaviv" class="info-box">
+            <div class="region-header">
+              <div class="region-icon">
+                <i class="fas fa-city"></i>
+              </div>
+              <h3 class="region-title">תל אביב</h3>
+            </div>
+            <ul class="region-facts">
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-beach"></i>
+                </div>
+                <div class="fact-content">
+                  תל אביב מציעה שילוב של חופי ים, חיי לילה ותרבות קולינרית עשירה.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="fact-content">
+                  העיר השנייה בגודלה בגוש דן.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-music"></i>
+                </div>
+                <div class="fact-content">
+                  ידועה כ"עיר ללא הפסקה" עם חיי תרבות ותעסוקה תוססים.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="info-center" class="info-box">
+            <div class="region-header">
+              <div class="region-icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <h3 class="region-title">מרכז הארץ</h3>
+            </div>
+            <ul class="region-facts">
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-history"></i>
+                </div>
+                <div class="fact-content">
+                  יפו - עיר נמל עתיקה עם שילוב של היסטוריה ומודרניות.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-tree"></i>
+                </div>
+                <div class="fact-content">
+                  גן לאומי אפק שבראש העין - מסלולי הליכה במים ונוף טבעי עם בריכות מים עתיקות.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-industry"></i>
+                </div>
+                <div class="fact-content">
+                  אזור המרכז הוא לב הכלכלה והתעשייה של ישראל.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="info-south" class="info-box">
+            <div class="region-header">
+              <div class="region-icon">
+                <i class="fas fa-sun"></i>
+              </div>
+              <h3 class="region-title">דרום הארץ</h3>
+            </div>
+            <ul class="region-facts">
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-desert"></i>
+                </div>
+                <div class="fact-content">
+                  הנגב משתרע על כ-60% משטח מדינת ישראל.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-water"></i>
+                </div>
+                <div class="fact-content">
+                  ים המלח - אגם מלח חסר מוצא לים, עם יכולת ציפה ייחודית.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-plane"></i>
+                </div>
+                <div class="fact-content">
+                  אילת - עיר נופש ותיירות עם גישה לים האדום.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                </div>
+                <div class="fact-content">
+                  דימונה - העיר הגדולה בישראל בשטחה (220 קמ"ר).
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="info-azza" class="info-box">
+            <div class="region-header">
+              <div class="region-icon">
+                <i class="fas fa-umbrella-beach"></i>
+              </div>
+              <h3 class="region-title">אזור עזה</h3>
+            </div>
+            <ul class="region-facts">
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="fact-content">
+                  אזור עזה והסביבה הדרומית.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <div class="fact-content">
+                  בעל היסטוריה עשירה וחופים יפים.
+                </div>
+              </li>
+              <li class="region-fact">
+                <div class="fact-icon">
+                  <i class="fas fa-thermometer-half"></i>
+                </div>
+                <div class="fact-content">
+                  מאופיין באקלים ים תיכוני חם.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">© 2025 מידע גיאוגרפי על ישראל | נבנה באהבה לארץ</p>
+    </div>
+  </footer>
+
+  <script src="map.js"></script>
+</body>
+</html>

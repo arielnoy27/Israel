@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>חידון הידע על ישראל ועם ישראל</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+
+ <!-- Navigation -->
+  <nav class="navbar">
+      <div class="navbar-container">
+          <ul class="nav-menu">
+              <li>
+                  <a href="about.html" class="nav-link">
+                        <i class="fas fa-info-circle"></i> 
+                        אודות
+                    </a>
+                  
+              </li>
+              <li>
+                  <a href="quiz.html" class="nav-link active">
+                        <i class="fas fa-question-circle"></i> 
+                        חידון
+                    </a>
+              </li>
+              <li>
+                  <a href="timeline.html" class="nav-link">
+                      <i class="fas fa-clock"></i> 
+                      ציר זמן
+                  </a>
+              </li>
+              <li>
+                  <a href="map.html" class="nav-link">
+                        <i class="fas fa-globe"></i> 
+                        ארץ ישראל
+                    </a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+    <header>
+    <div class="rain"></div>
+    <div class="container">
+    </div>
+  </header>
+    <!-- Start Screen -->
+    <div id="start-screen" class="start-screen">
+        <div class="welcome-card">
+            <div class="icon-container">
+                <i class="fas fa-star-of-david"></i>
+            </div>
+            <h1>ברוכים הבאים לחידון הידע על ישראל ועם ישראל!</h1>
+            <p class="start-description">
+                בדקו את הידע שלכם על ההיסטוריה, התרבות והגאוגרפיה של ישראל ועם ישראל.
+                החידון כולל 5 שאלות מגוונות ומעניינות שיאתגרו אתכם.
+            </p>
+            <div class="quiz-stats">
+                <div class="stat-item">
+                    <i class="fas fa-question"></i>
+                    <span>5 שאלות</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <span>זמן חופשי</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>ציון מיידי</span>
+                </div>
+            </div>
+            <button class="start-button" onclick="startQuiz()">
+                <i class="fas fa-play"></i>
+                לתחילת החידון לחצו כאן
+            </button>
+        </div>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container" id="quiz-container">
+        <div class="quiz-progress">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <span class="progress-text" id="progress-text">שאלה 1 מתוך 5</span>
+        </div>
+
+        <div class="quiz-content">
+            <!-- Questions Section -->
+            <div class="questions-section">
+                <div class="quiz-header">
+                    <h1 class="quiz-title">חידון הידע על ישראל ועם ישראל</h1>
+                    <div class="score-badge" id="score-badge">
+                        <i class="fas fa-star"></i>
+                        <span id="current-score">0</span>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <div class="question-number" id="question-number">שאלה 1</div>
+                    <div class="question" id="question-text"></div>
+                </div>
+
+                <div class="options" id="options-container"></div>
+
+                <div class="feedback" id="feedback"></div>
+
+                <div id="retry-button" class="action-section hidden">
+                    <button class="retry-btn" onclick="retryQuestion()">
+                        <i class="fas fa-redo"></i>
+                        נסה שנית
+                    </button>
+                </div>
+
+                <div id="score-display" class="score-display"></div>
+
+                <div id="action-buttons" class="action-buttons hidden">
+                    <button class="btn-secondary" onclick="goHome()">
+                        <i class="fas fa-home"></i>
+                        חזור לעמוד הבית
+                    </button>
+                    <button class="btn-primary" onclick="nextQuestion()">
+                        <i class="fas fa-arrow-left"></i>
+                        לשאלה הבאה
+                    </button>
+                </div>
+            </div>
+
+            <!-- Image Section -->
+            <div class="image-section">
+                <div class="image-container">
+                    <img id="quiz-image" class="quiz-image" src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="תמונה לחידון ישראל" />
+                    <div class="image-overlay">
+                        <i class="fas fa-image"></i>
+                    </div>
+                </div>
+                <div class="image-caption">
+                    <i class="fas fa-info-circle"></i>
+                    תמונה הקשורה לשאלה הנוכחית
+                </div>
+            </div>
+        </div>
+    </div>
+
+\
+
+    <script src="quiz.js"></script>
+</body>
+</html>

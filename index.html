@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello, World!</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <h1 class="title">Hello World! </h1>
-      <p id="currentTime"></p>
-      <script src="script.js"></script>
-  </body>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>ישראל בתמצית</title>
+</head>
+<body>
+  <!-- 🧱 לוגו עליון -->
+  <div class="logo">
+    <img src="https://i.pinimg.com/736x/21/7f/76/217f76ca86c3faa47214e2f5f48db221.jpg" alt="לוגו האתר" />
+  </div>
+  <!-- 🔵 רקע עיגולים -->
+  <div class="background-circles">
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+  </div>
+  <!-- ✨ תוכן עיקרי -->
+  <div class="container">
+    <!-- 📝 טקסט מעוגל בקשת מעל הכותרת -->
+    <div class="curved-text">
+      <svg viewBox="0 0 600 200">
+        <path id="curve" fill="transparent" d="M10,170 A290,250 0 0,1 590,170" />
+        <text width="600">
+          <textPath xlink:href="#curve" startOffset="50%" text-anchor="middle" direction="rtl">
+            עם שאינו יודע את עברו עתידו לוט בערפל
+          </textPath>
+        </text>
+      </svg>
+    </div>
+    <h1>ברוכים הבאים<br>לישראל בתמצית</h1>
+    <div class="buttons">
+      <button class="circle-button" id="btn-map">ארץ ישראל</button>
+      <button class="circle-button" id="btn-timeline">ציר זמן</button>
+      <button class="circle-button" id="btn-quiz">חידון</button>
+      <button class="circle-button" id="btn-about">אודות</button>
+    </div>
+  </div>
+  <!-- 📜 JavaScript -->
+  <script src="script.js"></script>
+</body>
 </html>

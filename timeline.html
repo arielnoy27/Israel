@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ציר זמן אינטראקטיבי - תולדות עם ישראל</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="timeline.css">
+</head>
+<body>
+  <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <ul class="nav-menu">
+                <li>
+                  <a href="about.html" class="nav-link">
+                      <i class="fas fa-info-circle"></i> 
+                      אודות
+                  </a>
+                    
+                </li>
+                <li>
+                    <a href="quiz.html" class="nav-link">
+                        <i class="fas fa-question-circle"></i> 
+                        חידון
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline.html" class="nav-link active">
+                        <i class="fas fa-clock"></i> 
+                        ציר זמן
+                    </a>
+                </li>
+                    <a href="map.html" class="nav-link">
+                          <i class="fas fa-globe"></i> 
+                        ארץ ישראל
+                    </a>
+                <li>
+                    
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header33>
+    <div class="rain"></div>
+    <div class="container">
+    </div>
+  </header33>
+    <div class="header">
+        <h1>ציר הזמן של עם ישראל</h1>
+        <p>מסע בתולדות עמנו מתקופת האבות ועד ימינו</p>
+    </div>
+
+    <div class="timeline-container">
+        <div class="timeline">
+            <div class="timeline-item" onclick="openModal('modal1')">
+                <div class="timeline-icon">👨‍👩‍👦</div>
+                <h3>תקופת האבות</h3>
+                <div class="timeline-date">כ-2000-1500 לפנה"ס</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal2')">
+                <div class="timeline-icon">🌊</div>
+                <h3>יציאת מצרים</h3>
+                <div class="timeline-date">כ-1300 לפנה"ס</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal3')">
+                <div class="timeline-icon">🏰</div>
+                <h3>כניסה לארץ</h3>
+                <div class="timeline-date">כ-1200 לפנה"ס</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal4')">
+                <div class="timeline-icon">👑</div>
+                <h3>מלכות דוד ושלמה</h3>
+                <div class="timeline-date">1000-930 לפנה"ס</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal5')">
+                <div class="timeline-icon">💔</div>
+                <h3>גלות בבל הראשונה</h3>
+                <div class="timeline-date">586 לפנה"ס</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal6')">
+                <div class="timeline-icon">🔄</div>
+                <h3>שיבת ציון - בית שני</h3>
+                <div class="timeline-date">538 לפנה"ס</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal7')">
+                <div class="timeline-icon">🏛️</div>
+                <h3>גלות שנייה</h3>
+                <div class="timeline-date">70 לסה"נ</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal8')">
+                <div class="timeline-icon">⛵</div>
+                <h3>גירוש ספרד</h3>
+                <div class="timeline-date">1492</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal9')">
+                <div class="timeline-icon">🏛️</div>
+                <h3>הקונגרס הציוני הראשון</h3>
+                <div class="timeline-date">1897</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal10')">
+                <div class="timeline-icon">💔</div>
+                <h3>השואה</h3>
+                <div class="timeline-date">1933-1945</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal11')">
+                <div class="timeline-icon">🇮🇱</div>
+                <h3>הקמת מדינת ישראל</h3>
+                <div class="timeline-date">1948</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal12')">
+                <div class="timeline-icon">⚔️</div>
+                <h3>מלחמת ששת הימים</h3>
+                <div class="timeline-date">1967</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal13')">
+                <div class="timeline-icon">🕊️</div>
+                <h3>הסכמי אוסלו</h3>
+                <div class="timeline-date">1993</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal14')">
+                <div class="timeline-icon">🏠</div>
+                <h3>התנתקות מעזה</h3>
+                <div class="timeline-date">2005</div>
+            </div>
+
+            <div class="timeline-item" onclick="openModal('modal15')">
+                <div class="timeline-icon">💻</div>
+                <h3>ישראל כמעצמת היי-טק</h3>
+                <div class="timeline-date">2000-2025</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>תקופת האבות - אברהם, יצחק ויעקב</h2>
+            <div class="date">כ-2000-1500 לפנה"ס</div>
+            <p>תקופת האבות היא התקופה המקראית בה חיו שלושת אבות עם ישראל: אברהם, יצחק ויעקב. אברהם אבינו קיבל הבטחה מהקב"ה לתת לו ולזרעו את ארץ ישראל, ועזב את עירו חרן והלך לארץ כנען.</p>
+            <p>יצחק אבינו, בנו של אברהם, המשיך את הברית והוליד את יעקב ואת עשיו. יעקב, שנקרא גם ישראל, היה אבי שנים עשר השבטים ועליו נקרא עם ישראל.</p>
+            <p>בתקופה זו נוסדו יסודות האמונה היהודית והברית בין הקב"ה לעם ישראל. האבות היו רועי צאן שנדדו ברחבי ארץ כנען והקימו מזבחות למקום.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>יציאת מצרים</h2>
+            <div class="date">כ-1300 לפנה"ס</div>
+            <p>לאחר שעם ישראל שהה במצרים כ-400 שנה, בתחילה כאורחים ולאחר מכן כעבדים, הוציא הקב"ה את העם ממצרים בידי משה רבנו ואהרן הכהן.</p>
+            <p>היציאה ממצרים כללה עשר מכות שהביא הקב"ה על מצרים, קריעת ים סוף, ו-40 שנות נדודים במדבר. במהלך תקופה זו קיבל עם ישראל את התורה בהר סיני.</p>
+            <p>יציאת מצרים היא האירוע המרכזי בתולדות עם ישראל והיא מזכירה לנו את הופעתנו כעם חופשי ואת הברית עם הקב"ה.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>כניסה לארץ ישראל</h2>
+            <div class="date">כ-1200 לפנה"ס</div>
+            <p>בהנהגת יהושע בן נון, נכנס עם ישראל לארץ הבטחה לאחר 40 שנות נדודים במדבר. הכיבוש החל בחציית נהר הירדן ובכיבוש העיר יריחו.</p>
+            <p>במהלך תקופת הכיבוש, לחמו בני ישראל נגד שבעה עמים שישבו בארץ כנען ובחלקו את הארץ בין שנים עשר השבטים.</p>
+            <p>זו הייתה תחילת ההתיישבות הקבועה של עם ישראל בארץ ישראל, מימוש ההבטחה שניתנה לאבות.</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>מלכות דוד ושלמה - בית המקדש הראשון</h2>
+            <div class="date">1000-930 לפנה"ס</div>
+            <p>דוד המלך איחד את כל שבטי ישראל וכבש את יבוס (ירושלים), והפך אותה לבירת ישראל. הוא הכין את התכניות לבניית בית המקדש והקים ממלכה חזקה ומאוחדת.</p>
+            <p>שלמה המלך בנו בנה את בית המקדש הראשון והפך את ירושלים למרכז רוחני של עם ישראל. בתקופתו הגיעה הממלכה לשיא כוחה וחכמתה.</p>
+            <p>תקופה זו נחשבת לתור הזהב של עם ישראל, כאשר הארץ הייתה מאוחדת, חזקה ומכובדת בין העמים.</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>הגלות הבבלית הראשונה</h2>
+            <div class="date">586 לפנה"ס</div>
+            <p>לאחר חלוקת הממלכה לממלכת יהודה וממלכת ישראל, כבש נבוכדנאצר מלך בבל את ירושלים, החריב את בית המקדש הראשון והגלה את עם יהודה לבבל.</p>
+            <p>זו הייתה תחילת הגלות הראשונה של עם ישראל מארצו. במהלך הגלות, שמר העם על זהותו הדתית והתרבותית ולא נטמע בעמים האחרים.</p>
+            <p>הגלות הבבלית נמשכה 70 שנה, כפי שניבא ירמיהו הנביא, ובמהלכה התפתחה היהדות הגולה.</p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>שיבת ציון - בית המקדש השני</h2>
+            <div class="date">538 לפנה"ס</div>
+            <p>כורש מלך פרס אפשר ליהודים לשוב לארץ ישראל ולבנות מחדש את בית המקדש. עזרא הסופר ונחמיה הנהיגו את תהליך השיבה והבנייה מחדש.</p>
+            <p>נבנה בית המקדש השני, נחזרה ירושלים לגדולתה וחודשה החיים היהודיים בארץ ישראל. תקופה זו נמשכה כ-600 שנה.</p>
+            <p>זוהי תקופת הבית השני, שבה התפתחה המשנה, הפרושים והצדוקים, ועם ישראל חזר לחיות חיים עצמאיים בארצו.</p>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <h2>חורבן בית שני והגלות השנייה</h2>
+            <div class="date">70 לסה"נ</div>
+            <p>הרומאים כבשו את ירושלים, החריבו את בית המקדש השני והגלו את עם ישראל מארצו. זוהי תחילת הגלות הארוכה שנמשכה כמעט 2000 שנה.</p>
+            <p>מרד בר כוכבא (132-135 לסה"נ) היה הניסיון האחרון לשחרר את הארץ מהרומאים, אך נכשל. הרומאים שינו את שם הארץ ל"פלסטינה".</p>
+            <p>עם ישראל התפזר בכל רחבי העולם אך שמר על זהותו, אמונתו ותקוותו לשיבה לציון לאורך כל שנות הגלות.</p>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <h2>גירוש ספרד</h2>
+            <div class="date">1492</div>
+            <p>המלכים הקתוליים פרדיננד ואיזבלה גירשו את כל היהודים מספרד. כ-200,000 יהודים נאלצו לעזוב את ספרד או להתנצר.</p>
+            <p>רבים מהמגורשים התיישבו באימפריה העות'מאנית, בפורטוגל, בהולנד ובמקומות אחרים. חלקם הגיעו גם לארץ ישראל.</p>
+            <p>הגירוש סיים את תור הזהב של יהדות ספרד, שהייתה אחת הקהילות היהודיות החשובות והפוריות בעולם.</p>
+        </div>
+    </div>
+
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal9')">&times;</span>
+            <h2>הקונגרס הציוני הראשון</h2>
+            <div class="date">1897</div>
+            <p>תאודור הרצל כינס בבאזל שבשווייץ את הקונגרס הציוני הראשון. בקונגרס הוקמה הארגון הציוני העולמי והוחלט על הקמת בית לעם היהודי בארץ ישראל.</p>
+            <p>הרצל כתב ביומנו: "בבאזל יסדתי את מדינת היהודים. אם אומר זאת בקול רם היום, יענו לי צחוק כללי. אולי בעוד חמישים שנה, ובוודאי בעוד מאה שנה, יכיר בכך הכל".</p>
+            <p>זוהי תחילת התנועה הציונית המודרנית שהביאה להקמת מדינת ישראל כעבור 51 שנה.</p>
+        </div>
+    </div>
+
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal10')">&times;</span>
+            <h2>השואה</h2>
+            <div class="date">1933-1945</div>
+            <p>המשטר הנאצי בגרמניה וממשלות השמח בתקופת מלחמת העולם השנייה רצחו בצורה שיטתית כשישה מיליון יהודים באירופה.</p>
+            <p>השואה הייתה ניסיון להשמדה מוחלטת של העם היהודי באירופה. מחנות ההשמדה, הגטאות והרדיפות הזוועתיות פגעו קשות בעם היהודי.</p>
+            <p>למרות הזוועות, רבים נלחמו על חייהם ועל כבודם, והשואה חיזקה את הצורך והדחיפות להקמת מדינה יהודית.</p>
+        </div>
+    </div>
+
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal11')">&times;</span>
+            <h2>הקמת מדינת ישראל ומלחמת העצמאות</h2>
+            <div class="date">1948</div>
+            <p>ב-14 במאי 1948 הכריז דוד בן גוריון על הקמת מדינת ישראל. לאחר כמעט 2000 שנות גלות, שב עם ישראל להיות עם חופשי בארצו.</p>
+            <p>מיד לאחר הכרזת העצמאות פתחו שבע מדינות ערב במלחמה נגד המדינה הצעירה. במלחמת העצמאות נהרגו כ-6000 ישראלים, אך המדינה הצליחה לעמוד בניסיון הקשה.</p>
+            <p>הקמת המדינה מימשה את חלום בני דורות להקים מחדש בית לעם היהודי בארץ ישראל.</p>
+        </div>
+    </div>
+
+    <div id="modal12" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal12')">&times;</span>
+            <h2>מלחמת ששת הימים</h2>
+            <div class="date">1967</div>
+            <p>במלחמת ששת הימים (5-10 ביוני 1967) ניצחה ישראל את הצבאות הערביים שהסתופפו על גבולותיה. במהלך המלחמה שוחררו ירושלים, יהודה ושומרון, רמת הגולן וסיני.</p>
+            <p>הניצחון האדיר והמהיר זכה להכרה עולמית ושינה את מעמדה של ישראל במזרח התיכון. הכי חשוב - איחוד ירושלים וחזרה למקומות הקדושים.</p>
+            <p>המלחמה הביאה לתחושת גאווה עצומה בעם ישראל והוכיחה את כוחו של צה"ל.</p>
+        </div>
+    </div>
+
+    <div id="modal13" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal13')">&times;</span>
+            <h2>הסכמי אוסלו</h2>
+            <div class="date">1993</div>
+            <p>ראש הממשלה יצחק רבין ויו"ר אש"ף יאסר ערפאת חתמו על הסכמי אוסלו בבית הלבן בנוכחות נשיא ארה"ב ביל קלינטון.</p>
+            <p>ההסכמים היו ניסיון להגיע לפתרון סכסוך ישראל-פלסטין על בסיס של שתי מדינות לשני עמים. נוצרה הרשות הפלסטינית והחלה תהליך של העברת שטחים.</p>
+            <p>למרות התקוות הרבות, התהליך נתקע ועדיין לא הושג פתרון מקיף לסכסוך.</p>
+        </div>
+    </div>
+
+    <div id="modal14" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal14')">&times;</span>
+            <h2>התנתקות מעזה</h2>
+            <div class="date">2005</div>
+            <p>ראש הממשלה אריאל שרון יזם את תוכנית ההתנתקות מעזה ומכמה יישובים בצפון השומרון. 21 יישובים יהודיים פונו וכ-8000 תושבים עקרו מבתיהם.</p>
+            <p>ההתנתקות הייתה צעד חד-צדדי של ישראל לסיים את הנוכחות הישראלית ברצועת עזה. הצעד היה שנוי במחלוקת ויצר פיצוץ חברתי בישראל.</p>
+            <p>לאחר ההתנתקות השתלטה החמאס על עזה והפכה אותה לבסיס טרור נגד ישראל.</p>
+        </div>
+    </div>
+
+    <div id="modal15" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal15')">&times;</span>
+            <h2>ישראל כמעצמת היי-טק</h2>
+            <div class="date">2000-2025</div>
+            <p>ישראל הפכה ל"אומת הסטארט-אפ" והתבססה כמעצמה טכנולוגית עולמית. המדינה מובילה בתחומי הסייבר, הביוטכנולוגיה, הבינה המלאכותית וחדשנות רפואית.</p>
+            <p>חברות ישראליות כמו צ'ק פוינט, טבע, מובילאיי ורבות אחרות הפכו לשמות מוכרים בעולם. תל אביב זוכה להכרה כמרכז היי-טק מוביל בעולם.</p>
+            <p>החדשנות הישראלית תורמת לפיתוח העולם בתחומים רבים ומציבה את ישראל כמדינה מתקדמת וחשובה בזירה הבינלאומית.</p>
+        </div>
+    </div>
+
+    <script src="timeline.js"></script>
+</body>
+</html>
